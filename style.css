@@ -83,11 +83,13 @@ h1, p, button {
 @font-face {
   font-family: "CSTM-Regular";
   src: url("../font/Regular.woff2") format("woff2");
+  src: url("../font/Regular.woff") format("woff");
   font-weight: 400;
 }
 @font-face {
   font-family: "CSTM-Regular";
   src: url("../font/Semibold.woff2") format("woff2");
+  src: url("../font/Semibold.woff") format("woff");
   font-weight: 600;
 }
 body {
