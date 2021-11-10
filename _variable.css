@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "CSTM-Regular";
+  src: url("../font/Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "CSTM-Regular";
+  src: url("../font/Semibold.woff2") format("woff2");
+  font-weight: 600;
+}
