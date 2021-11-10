@@ -284,6 +284,11 @@ video:after {
   width: 100%;
   padding: 0px 20px;
 }
+@media (max-width: 1000px) {
+  .case__container {
+    margin: 80px auto 40px;
+  }
+}
 
 .case__wrapper {
   position: relative;
