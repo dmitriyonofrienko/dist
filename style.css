@@ -1,0 +1,497 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul {
+  margin-left: 0;
+  /* Отступ слева в браузере IE и Opera */
+  padding-left: 0;
+  /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1, p, button {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.project__content {
+  position: relative;
+}
+
+.p {
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 29px;
+  color: #000;
+  font-family: "graphik lcg", "helvetica neue", "arial", sans-serif;
+}
+
+.caption {
+  font-family: "graphik lcg", "helvetica neue", "arial", sans-serif;
+  line-height: 29px;
+  color: #999;
+}
+
+.case__caption {
+  font-family: "graphik lcg", "helvetica neue", "arial", sans-serif;
+  line-height: 29px;
+  margin-top: 20px;
+  color: #999;
+  padding-bottom: 40px;
+}
+
+.case__para .p {
+  margin-top: 12px;
+}
+@media (max-width: 1000px) {
+  .case__para .p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 10px;
+  }
+}
+
+.h1 {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 60px;
+  color: #000;
+  font-family: "graphik lcg", "helvetica neue", "arial", sans-serif;
+}
+@media (max-width: 1000px) {
+  .h1 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+
+.h2 {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 50px;
+  color: #000;
+  font-family: "graphik lcg", "helvetica neue", "arial", sans-serif;
+}
+@media (max-width: 1000px) {
+  .h2 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+
+.border {
+  margin: 0 auto 20px;
+  width: 100%;
+  height: 1px;
+  background-color: #e1e1e1;
+}
+.border .p {
+  padding-top: 20px;
+}
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+}
+@media (max-width: 1000px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+.header a {
+  font-size: 16px;
+}
+.header a:hover {
+  transition: ease 0.15s;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.header__container {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero {
+  margin-top: 80px;
+  margin-bottom: 180px;
+}
+
+.hero__description {
+  grid-column: 2/4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 60px;
+}
+
+.project__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px 20px;
+  grid-template-areas: "oasis oasis" "amel shemax" "solar solar";
+}
+@media (max-width: 1000px) {
+  .project__grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px;
+    grid-template-areas: "oasis" "amel" "shemax" "solar";
+  }
+}
+
+.solar {
+  grid-area: solar;
+}
+
+.oasis {
+  grid-area: oasis;
+}
+
+.shemax {
+  grid-area: shemax;
+}
+
+.amel {
+  grid-area: amel;
+}
+
+.project {
+  padding-bottom: 100px;
+}
+
+.project__item {
+  overflow: hidden;
+}
+.project__item img, .project__item video {
+  object-fit: cover;
+}
+.project__item:hover .project__title p {
+  color: #36B34D;
+}
+
+.project__catalog {
+  display: flex;
+}
+.project__catalog .p {
+  margin-right: 25px;
+}
+
+.project__title {
+  margin-top: 20px;
+}
+
+video:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  width: 100%;
+  height: 100%;
+}
+
+.case__container {
+  margin: 120px auto 60px;
+  max-width: 1160px;
+  width: 100%;
+  padding: 0px 20px;
+}
+
+.case__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  padding: 80px;
+  width: 100%;
+  height: auto;
+  background: #ebebeb;
+}
+.case__wrapper img {
+  max-width: 1240px;
+  width: 100%;
+  height: auto;
+}
+
+.case__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  padding: 80px;
+  width: calc(100% - 40px);
+  height: auto;
+  background: #ebebeb;
+}
+.case__content video {
+  max-width: 1240px;
+  width: 100%;
+  height: auto;
+}
+.case__content img {
+  max-width: 1240px;
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 1000px) {
+  .case__content {
+    padding: 30px;
+  }
+}
+@media (max-width: 542px) {
+  .case__content {
+    padding: 25px;
+  }
+}
+
+.proper {
+  max-width: 1240px;
+}
+.proper img {
+  max-width: 100%;
+  height: auto;
+}
+
+.tablet video, .tablet img {
+  box-shadow: 0px 30px 30px -30px rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  border: 15px solid #000;
+}
+@media (max-width: 1000px) {
+  .tablet video, .tablet img {
+    border-radius: 12px;
+    border: 6px solid #000;
+  }
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: 550px;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+@media (max-width: 768px) {
+  .grid2 {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+@media (max-width: 1000px) {
+  .grid3 {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+}
+
+.empty {
+  padding-top: 40px;
+  margin: 20px auto;
+}
+
+.oasis_bcg {
+  background: radial-gradient(43.54% 133.33% at 93.54% 69.5%, rgba(29, 143, 179, 0.35) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(41.25% 112.66% at 13.21% 58.75%, rgba(255, 255, 255, 0.35) 0%, rgba(198, 214, 255, 0) 100%), #2ECC71;
+}
+
+.solar_h1 {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 55px;
+  color: #000;
+  font-family: "graphik lcg", "helvetica neue", "arial", sans-serif;
+}
+@media (max-width: 1000px) {
+  .solar_h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
+.solar_bcg {
+  background-color: #C1D8E3;
+}
+
+.project__oasis {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 60%;
+  height: 10px;
+  transition: ease 0.3s;
+}
+.project__oasis .oasis_01 {
+  position: absolute;
+  width: 12.86%;
+  height: auto;
+  left: 13.5%;
+  right: 73.69%;
+  top: 9.48%;
+  bottom: 46.15%;
+  z-index: 2;
+  opacity: 0.65;
+  filter: blur(5px);
+}
+.project__oasis .oasis_02 {
+  position: absolute;
+  width: 18.14%;
+  height: auto;
+  left: 21.86%;
+  right: 59.99%;
+  top: 16.59%;
+  bottom: 20.56%;
+  z-index: 4;
+  filter: blur(2px);
+}
+.project__oasis .oasis_03 {
+  position: absolute;
+  width: 24.45%;
+  height: auto;
+  left: 36.98%;
+  right: 38.57%;
+  top: 8.29%;
+  bottom: 7.05%;
+  z-index: 5;
+}
+.project__oasis .oasis_04 {
+  position: absolute;
+  width: 20.26%;
+  height: auto;
+  left: 58.64%;
+  right: 21.1%;
+  top: 14.45%;
+  bottom: 15.4%;
+  z-index: 4;
+  filter: blur(1px);
+}
+.project__oasis .oasis_05 {
+  position: absolute;
+  width: 14%;
+  height: auto;
+  left: 72.5%;
+  right: 13.49%;
+  top: 6.99%;
+  bottom: 44.49%;
+  z-index: 1;
+  opacity: 0.75;
+  filter: blur(5px);
+}
+
+.shemax_bcg {
+  background-color: #DD4049;
+}
+
+ol {
+  list-style-type: decimal;
+}
+ol li {
+  font-size: 19px;
+  line-height: 29px;
+  margin-top: 6px;
+}
+@media (max-width: 1000px) {
+  ol li {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 10px;
+  }
+}
