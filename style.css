@@ -401,11 +401,6 @@ video:after {
   }
 }
 
-.empty {
-  padding-top: 40px;
-  margin: 20px auto;
-}
-
 .oasis_bcg {
   background: radial-gradient(43.54% 133.33% at 93.54% 69.5%, rgba(29, 143, 179, 0.35) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(41.25% 112.66% at 13.21% 58.75%, rgba(255, 255, 255, 0.35) 0%, rgba(198, 214, 255, 0) 100%), #2ECC71;
 }
