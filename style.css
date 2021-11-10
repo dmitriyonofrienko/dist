@@ -98,17 +98,17 @@ a {
   font-size: 19px;
   line-height: 29px;
   color: #000;
-  font-family: "graphik lcg", "helvetica neue", "arial", sans-serif;
+  font-family: "inter", sans-serif;
 }
 
 .caption {
-  font-family: "graphik lcg", "helvetica neue", "arial", sans-serif;
+  font-family: "inter", sans-serif;
   line-height: 29px;
   color: #999;
 }
 
 .case__caption {
-  font-family: "graphik lcg", "helvetica neue", "arial", sans-serif;
+  font-family: "inter", sans-serif;
   line-height: 29px;
   margin-top: 20px;
   color: #999;
@@ -131,7 +131,7 @@ a {
   font-size: 55px;
   line-height: 60px;
   color: #000;
-  font-family: "graphik lcg", "helvetica neue", "arial", sans-serif;
+  font-family: "inter", sans-serif;
 }
 @media (max-width: 1000px) {
   .h1 {
@@ -145,7 +145,7 @@ a {
   font-size: 35px;
   line-height: 50px;
   color: #000;
-  font-family: "graphik lcg", "helvetica neue", "arial", sans-serif;
+  font-family: "inter", sans-serif;
 }
 @media (max-width: 1000px) {
   .h2 {
@@ -403,7 +403,7 @@ video:after {
   font-size: 50px;
   line-height: 55px;
   color: #000;
-  font-family: "graphik lcg", "helvetica neue", "arial", sans-serif;
+  font-family: "inter", sans-serif;
 }
 @media (max-width: 1000px) {
   .solar_h1 {
