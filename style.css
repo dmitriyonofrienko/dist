@@ -254,7 +254,7 @@ a {
   object-fit: cover;
 }
 .project__item:hover .project__title p {
-  color: #36B34D;
+  color: rgba(0, 0, 0, 0.55);
 }
 
 .project__catalog {
