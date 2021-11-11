@@ -93,6 +93,7 @@ h1, p, button {
   font-weight: 600;
 }
 body {
+  font-family: "CSTM-Regular", "helvetica neue", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
