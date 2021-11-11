@@ -82,14 +82,12 @@ h1, p, button {
 
 @font-face {
   font-family: "CSTM-Regular";
-  src: url("font/Regular.woff2") format("woff2");
-  src: url("font/Regular.woff") format("woff");
+  src: url("font/Regular.woff2") format("woff2"), url("font/Regular.woff") format("woff"), url("font/Regular.ttf") format("truetype"), url("font/Regular.eot") format("embedded-opentype");
   font-weight: 400;
 }
 @font-face {
   font-family: "CSTM-Regular";
-  src: url("font/Semibold.woff2") format("woff2");
-  src: url("font/Semibold.woff") format("woff");
+  src: url("font/Semibold.woff2") format("woff2"), url("font/Semibold.woff") format("woff"), url("font/Semibold.ttf") format("truetype"), url("font/Semibold.eot") format("embedded-opentype");
   font-weight: 600;
 }
 body {
