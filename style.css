@@ -82,14 +82,14 @@ h1, p, button {
 
 @font-face {
   font-family: "CSTM-Regular";
-  src: url("../font/Regular.woff2") format("woff2");
-  src: url("../font/Regular.woff") format("woff");
+  src: url("font/Regular.woff2") format("woff2");
+  src: url("font/Regular.woff") format("woff");
   font-weight: 400;
 }
 @font-face {
   font-family: "CSTM-Regular";
-  src: url("../font/Semibold.woff2") format("woff2");
-  src: url("../font/Semibold.woff") format("woff");
+  src: url("font/Semibold.woff2") format("woff2");
+  src: url("font/Semibold.woff") format("woff");
   font-weight: 600;
 }
 body {
@@ -110,17 +110,17 @@ a {
   font-size: 19px;
   line-height: 29px;
   color: #000;
-  font-family: "CSTM-Regular", sans-serif;
+  font-family: "CSTM-Regular", "helvetica neue", sans-serif;
 }
 
 .caption {
-  font-family: "CSTM-Regular", sans-serif;
+  font-family: "CSTM-Regular", "helvetica neue", sans-serif;
   line-height: 29px;
   color: #999;
 }
 
 .case__caption {
-  font-family: "CSTM-Regular", sans-serif;
+  font-family: "CSTM-Regular", "helvetica neue", sans-serif;
   line-height: 29px;
   margin-top: 20px;
   color: #999;
@@ -143,7 +143,7 @@ a {
   font-size: 55px;
   line-height: 60px;
   color: #000;
-  font-family: "CSTM-Regular", sans-serif;
+  font-family: "CSTM-Regular", "helvetica neue", sans-serif;
 }
 @media (max-width: 1000px) {
   .h1 {
@@ -157,7 +157,7 @@ a {
   font-size: 35px;
   line-height: 50px;
   color: #000;
-  font-family: "CSTM-Regular", sans-serif;
+  font-family: "CSTM-Regular", "helvetica neue", sans-serif;
 }
 @media (max-width: 1000px) {
   .h2 {
@@ -410,7 +410,7 @@ video:after {
   font-size: 50px;
   line-height: 55px;
   color: #000;
-  font-family: "CSTM-Regular", sans-serif;
+  font-family: "CSTM-Regular", "helvetica neue", sans-serif;
 }
 @media (max-width: 1000px) {
   .solar_h1 {
