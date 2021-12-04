@@ -43,34 +43,36 @@ document.addEventListener('mousemove', parallax); //gsap oasis preview
 
 gsap.from('.oasis_01', {
   opacity: 0,
-  duration: .15,
+  duration: 1,
+  delay: 1,
   ease: 'ease-in-out',
   y: 30
 });
 gsap.from('.oasis_02', {
   opacity: 0,
-  delay: .2,
-  duration: 0.2,
+  delay: .5,
+  duration: 1,
   ease: 'ease-in-out',
   y: 50
 });
 gsap.from('.oasis_03', {
   opacity: 0,
-  duration: .3,
+  duration: 1,
   ease: 'ease-in-out',
-  delay: .4,
+  delay: 0,
   y: 70
 });
 gsap.from('.oasis_04', {
   opacity: 0,
-  delay: 0.3,
-  duration: 0.2,
+  delay: 0.5,
+  duration: 1,
   ease: 'ease-in-out',
   y: 50
 });
 gsap.from('.oasis_05', {
   opacity: 0,
-  duration: 0.15,
+  duration: 1,
+  delay: 1,
   ease: 'ease-in-out',
   y: 30
 });
