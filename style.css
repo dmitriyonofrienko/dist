@@ -119,14 +119,11 @@ a {
 }
 
 .case__hero {
-  margin-top: 240px;
-  margin-bottom: 100px;
-}
-.case__hero .case__text {
-  margin-top: 40px;
-}
-.case__hero .case__caption {
-  max-width: 325px;
+  max-height: 580px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .case__para .p {
